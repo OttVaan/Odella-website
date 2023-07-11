@@ -1,0 +1,56 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: Seravek;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.personal-contacts{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    min-width: 500px;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.personal-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.company-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .back-panel {
+    width: 500px;
+    height: 275px;
+    position: absolute;
+    top: -20px;
+}
+
+.contact .front-panel {
+    height: 120px;
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    z-index: -100;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-img {
+    height: 30px;
+    margin-top: 10px;
+}

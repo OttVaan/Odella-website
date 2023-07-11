@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Seravek;
+    src: url("../fonts/SeravekBasicTT-Bold.ttf");
+}
+
+body {
+    background-image: url("../media/cover_photo.jpeg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+   }
+
+section {
+    display: flex;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: left;
+    margin-top: 600px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Seravek;
+}
+
+.about-us-text-div { 
+    margin-top: 10px;
+    right: -10px;
+    left: -10px;
+}
+
+.about-us-text {
+    color: rgb(32, 32, 32);
+    font-family: Seravek;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: Seravek;
+    min-width: 1200px;
+    max-width: 1200px;
+    min-height: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-info {
+    width: 500px;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-top: 70px;
+    box-shadow: 10px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-size: 35px;
+    font-family: Seravek;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-bottom: 0px;
+}
+
+
+.section-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 66%;
+    margin-bottom: 70px;
+    padding-top: 70px;
+}
+
+.section-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.section-logo img{
+    width: 100%;
+    
+}
+
+
+.gallery {
+    width: 1200px;
+    margin: 23px;
+    display: flex;
+    overflow-x: scroll;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    position: relative;
+    z-index: 100;
+}
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.back-panel {
+    position: absolute;
+    z-index: -100;
+    height: 400px;
+    width: 1400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: rgb(184, 184, 184);
+    margin-top: 150px;
+    height: 150px;
+    width: 100vw;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img{
+    height: 75px;
+}
+
+#next-button {
+    transform: rotate(-135deg);
+}
+
+#back-button {
+    transform: rotate(45deg);
+}
+
+.gallery-button{
+    transition: 0.2s;
+}
+
+.gallery-button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}

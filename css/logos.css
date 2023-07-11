@@ -1,0 +1,11 @@
+.top-logo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top-logo .logo {
+    height: 150px;
+    margin-top: 125px;
+    margin-bottom: 35px;
+}
