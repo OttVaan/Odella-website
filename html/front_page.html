@@ -16,27 +16,27 @@
                 <div class="top-menu-side"></div>
     
                 <div class="top-menu-middle">
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toSection(0)">
                         ETTEVÕTETE OSTU-MÜÜGI NÕUSTAMINE
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toSection(1)">
                         ETTEVÕTTE HINDAMINE
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toSection(2)">
                         DUE DILIGENCE
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toSection(3)">
                         RAHASTUS JA MUU NÕU
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toSection(4)">
                         PEAMISED KOOSTÖÖPARTNERID
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
-                    <div class="top-menu-item">
+                    <div class="top-menu-item" onclick="toContact()">
                         KONTAKT
                         <div class="top-menu-item-hover-animation"></div>
                     </div>
@@ -298,7 +298,7 @@
         </div>
         
     <script>
-        <!--See on gallery nupud-->
+        // This part of code is for gallery buttons
         let scrollContainer = document.querySelector(".gallery");
         let backButton = document.getElementById("back-button");
         let nextButton = document.getElementById("next-button");
@@ -306,14 +306,28 @@
         nextButton.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth"
             scrollContainer.scrollLeft += 1200;
+
+            if (scrollContainer.scrollLeft % 1200 != 0) {
+                var pageNumber = Math.round(scrollContainer.scrollLeft / 1200);
+                var scrollCorrection = scrollContainer.scrollLeft - pageNumber * 1200;
+                scrollContainer.scrollLeft -= scrollCorrection;
+            }
+            console.log(scrollContainer.scrollLeft)
         })
 
         backButton.addEventListener("click", () => {
             scrollContainer.scrollLeft -= 1200;
-            scrollContainer.style.scrollBehavior = "smooth"
+            scrollContainer.style.scrollBehavior = "smooth";
+
+            if (scrollContainer.scrollLeft % 1200 != 0) {
+                var pageNumber = Math.round(scrollContainer.scrollLeft / 1200);
+                var scrollCorrection = scrollContainer.scrollLeft - pageNumber * 1200;
+                scrollContainer.scrollLeft -= scrollCorrection;
+            }
+            console.log(scrollContainer.scrollLeft)
         })
 
-
+        // This fuction is for header to change when the page is scrolled down
         window.addEventListener('scroll', function() {
             var topMenu = document.querySelector('.header');
             
@@ -323,6 +337,34 @@
                 topMenu.classList.remove('scrolled');
             }
         });
+
+        // This function scrolls to right panel whn clicked on topmenu
+        function toSection(n){
+            const divLibrary = document.getElementById("gallery-wrap");
+            var distanceFromTop = 1200;
+            var scrolledFromTop = window.scrollY;
+
+            // lets scroll to library
+            var toScroll = distanceFromTop - scrolledFromTop;
+            window.scrollBy(0, toScroll);
+
+            // lets scroll to our page
+            var pageStart = n * 1200;
+            console.log(pageStart);
+            scrollContainer.scrollTo(pageStart, 0);
+            scrollContainer.style.scrollBehavior = "smooth";
+
+        }
+
+        // This is a function to scroll to contact
+        function toContact(){
+            const divLibrary = document.getElementById("contact");
+            var distanceFromTop = 1600;
+            var scrolledFromTop = window.scrollY;
+            var toScroll = distanceFromTop - scrolledFromTop;
+
+            window.scrollBy(0, toScroll);
+        }
     </script>
 
 
