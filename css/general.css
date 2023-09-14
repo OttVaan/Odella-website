@@ -21,7 +21,8 @@ section {
     flex-direction: column;
     position: relative;
     justify-content: left;
-    margin-top: 600px;
+    margin-top: 25vmax;
+    margin-bottom: 25vmax;
 }
 
 .heading {
