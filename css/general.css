@@ -60,7 +60,6 @@ section {
 }
 
 .section-info {
-    width: 500px;
     margin-left: 50px;
     padding-right: 20px;
     padding-top: 70px;
@@ -75,16 +74,25 @@ section {
     margin-bottom: 0px;
 }
 
+.logos-right-panel {
+    min-width: 66%;
+    position: relative;
+    max-height: 500px;
+}
+
 
 .section-logos {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-right: 20px;
     margin-left: 20px;
-    max-width: 66%;
+    min-width: 66%;
+    height: 60%;
     margin-bottom: 70px;
     padding-top: 70px;
+    text-align: center;
 }
 
 .section-logo {
@@ -92,13 +100,33 @@ section {
     justify-content: center;
     align-items: center;
     margin-right: 70px;
+    min-width: 100px;
     max-width: 150px;
     max-height: 150px;
 }
 
 .section-logo img{
     width: 100%;
-    
+}
+
+.next-logos-button {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    left: 40%;
+    bottom: 30px;
+    background-color: transparent;
+    font-family: Seravek;
+    font-size: 15px;
+    color: gray;
+    border-style: solid;
+    transition: all 0.2s;
+}
+
+.next-logos-button:hover{
+    color: lightblue;
+    scale: 1.01
 }
 
 
