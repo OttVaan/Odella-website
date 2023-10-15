@@ -120,6 +120,36 @@ function toSection(n){
     // lets scroll to our page
     var pageStart = n * 1200;
     console.log(pageStart);
+    // lets load logos to that page
+    if (n == 0) {
+        logos = logos_buy_sell;
+        logos_id = "buy-sell";
+    }
+
+    if (n == 1) {
+        logos = logos_evaluation;
+        logos_id = "evaluation";
+    }
+
+    if (n == 2) {
+        logos = logos_due;
+        logos_id = "due";
+    }
+
+    if (n == 3) {
+        logos = logos_money;
+        logos_id = "money";
+    }
+
+    if (n == 4) {
+        logos = logos_partner;
+        logos_id = "partner";
+    }
+
+    startIndex = 0;
+    logoGrid = document.getElementById(logos_id);
+    displayLogos();
+
     scrollContainer.scrollTo(pageStart, 0);
     scrollContainer.style.scrollBehavior = "smooth";
 
@@ -226,7 +256,7 @@ let logoGrid = document.getElementById(logos_id);
 
 function displayLogos() {
     logoGrid.innerHTML = ''; // Clear the grid
-    for (let i = startIndex; i < startIndex + 6 && i < logos.length; i++) {
+    for (let i = startIndex; i < startIndex + 9 && i < logos.length; i++) {
         const container = document.createElement('div');
         const logo = document.createElement("img")
         logo.src = logos[i];
@@ -242,7 +272,7 @@ const buttons = document.querySelectorAll(".next-logos-button");
 buttons.forEach(function (button) {
     button.addEventListener("click", () => {
     // Increment the starting index for the next set of logos
-    startIndex += 6;
+    startIndex += 9;
     if (startIndex >= logos.length) {
     // If we reach the end, loop back to the beginning
     startIndex = 0;
