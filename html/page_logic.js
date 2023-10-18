@@ -40,6 +40,10 @@ nextButton.addEventListener("click", () => {
 
     startIndex = 0; 
     logoGrid = document.getElementById(logos_id);
+    buttons.forEach(function(button){
+        let message = `Leht ${1} / ${Math.ceil(logos.length / 6)}`;
+        button.textContent = message;
+    });
     displayLogos();
     console.log(scrollContainer.scrollLeft)
 })
