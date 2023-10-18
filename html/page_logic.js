@@ -79,9 +79,16 @@ backButton.addEventListener("click", () => {
         logos_id = "partner";
     }
 
+    
+
     startIndex = 0;
     logoGrid = document.getElementById(logos_id);
+    
     displayLogos();
+    buttons.forEach(function(button){
+        let message = `Leht ${1} / ${Math.ceil(logos.length / 6)}`;
+        button.textContent = message;
+    });
 })
 
 
@@ -146,8 +153,14 @@ function toSection(n){
         logos_id = "partner";
     }
 
+    
+
     startIndex = 0;
     logoGrid = document.getElementById(logos_id);
+    buttons.forEach(function(button){
+        let message = `Leht ${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
+        button.textContent = message;
+    });
     displayLogos();
 
     scrollContainer.scrollTo(pageStart, 0);
@@ -256,7 +269,7 @@ let logoGrid = document.getElementById(logos_id);
 
 function displayLogos() {
     logoGrid.innerHTML = ''; // Clear the grid
-    for (let i = startIndex; i < startIndex + 9 && i < logos.length; i++) {
+    for (let i = startIndex; i < startIndex + 6 && i < logos.length; i++) {
         const container = document.createElement('div');
         const logo = document.createElement("img")
         logo.src = logos[i];
@@ -272,11 +285,16 @@ const buttons = document.querySelectorAll(".next-logos-button");
 buttons.forEach(function (button) {
     button.addEventListener("click", () => {
     // Increment the starting index for the next set of logos
-    startIndex += 9;
+    startIndex += 6;
     if (startIndex >= logos.length) {
     // If we reach the end, loop back to the beginning
     startIndex = 0;
     }
+    
+    buttons.forEach(function(button){
+        let message = `Leht ${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
+        button.textContent = message;
+    });
     displayLogos();
     console.log(logos_id, startIndex)
     });
