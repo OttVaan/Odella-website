@@ -258,9 +258,9 @@ const logos_partner = [
     "../media/logod/PEAMISED KOOSTÖÖPARTNERID/Sorainen.png",  
     "../media/logod/PEAMISED KOOSTÖÖPARTNERID/evershed.png",      
     "../media/logod/PEAMISED KOOSTÖÖPARTNERID/TGS.png",    
-    "../media/logod/PEAMISED KOOSTÖÖPARTNERID/TAXlink.jpg", 
+    "../media/logod/PEAMISED KOOSTÖÖPARTNERID/triniti-logo.svg", 
     "../media/logod/PEAMISED KOOSTÖÖPARTNERID/BDO.png",
-    "../media/logod/PEAMISED KOOSTÖÖPARTNERID/persense.png",
+    "../media/logod/PEAMISED KOOSTÖÖPARTNERID/mazars-logo.png",
 ]
 
 
