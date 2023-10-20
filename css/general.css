@@ -127,7 +127,7 @@ section {
 }
 
 .next-logos-button:hover{
-    color: lightblue;
+    color: black;
     scale: 1.01
 }
 
@@ -200,4 +200,9 @@ section {
     list-style-type: none;
     margin-bottom: 15px;
     font-weight: 300;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
 }
