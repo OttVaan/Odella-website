@@ -41,7 +41,7 @@ nextButton.addEventListener("click", () => {
     startIndex = 0; 
     logoGrid = document.getElementById(logos_id);
     buttons.forEach(function(button){
-        let message = `Leht ${1} / ${Math.ceil(logos.length / 6)}`;
+        let message = `${1} / ${Math.ceil(logos.length / 6)}`;
         button.textContent = message;
     });
     displayLogos();
@@ -90,7 +90,7 @@ backButton.addEventListener("click", () => {
     
     displayLogos();
     buttons.forEach(function(button){
-        let message = `Leht ${1} / ${Math.ceil(logos.length / 6)}`;
+        let message = `${1} / ${Math.ceil(logos.length / 6)}`;
         button.textContent = message;
     });
 })
@@ -162,7 +162,7 @@ function toSection(n){
     startIndex = 0;
     logoGrid = document.getElementById(logos_id);
     buttons.forEach(function(button){
-        let message = `Leht ${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
+        let message = `${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
         button.textContent = message;
     });
     displayLogos();
@@ -200,18 +200,21 @@ function toContact(){
 //This is a code for logo display logic
 // An array of your logo URLs
 const logos_buy_sell = [
+    "../media/logod/ostu-müügi nõustamine/carglass.png",
+    "../media/logod/ostu-müügi nõustamine/antalis.svg",
+    "../media/logod/ostu-müügi nõustamine/sanitexxx.png", // Vigane logo WE ARE SWEEP
     "../media/logod/ostu-müügi nõustamine/sanitex.png",
     "../media/logod/ostu-müügi nõustamine/mehiläinen.png",
     "../media/logod/ostu-müügi nõustamine/BAltCap.png",
     "../media/logod/ostu-müügi nõustamine/LDZ.png",
     "../media/logod/ostu-müügi nõustamine/Ühinenud-ajakirjad.png",
-    "../media/logod/ostu-müügi nõustamine/3group.png",
-    "../media/logod/ostu-müügi nõustamine/3group.png",
     "../media/logod/ostu-müügi nõustamine/3group.png"
-
 ];
 
 const logos_evaluation = [
+    "../media/logod/Ettevõtte-hindamine/carglass.png",
+    "../media/logod/Ettevõtte-hindamine/meliva.svg",
+    "../media/logod/Ettevõtte-hindamine/cybers.svg",
     "../media/logod/Ettevõtte-hindamine/kaupmees.png",
     "../media/logod/Ettevõtte-hindamine/man.png",
     "../media/logod/Ettevõtte-hindamine/BaltCap.png",
@@ -221,6 +224,13 @@ const logos_evaluation = [
 ];
 
 const logos_due = [
+    "../media/logod/DUE DILIGENCE/auto24.svg",
+    "../media/logod/DUE DILIGENCE/tradehouse.png",
+    "../media/logod/DUE DILIGENCE/straumann.png",
+    "../media/logod/DUE DILIGENCE/kidzone.png",
+    "../media/logod/DUE DILIGENCE/vkge.svg",
+    "../media/logod/DUE DILIGENCE/barrus.svg",
+    "../media/logod/DUE DILIGENCE/ttl.png",
     "../media/logod/DUE DILIGENCE/3group.png",
     "../media/logod/DUE DILIGENCE/lindstöm.png", 
     "../media/logod/DUE DILIGENCE/äripäev.png",
@@ -239,16 +249,15 @@ const logos_due = [
 ]
 
 const logos_money = [
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/windro.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/skinest.jpg",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/carglass.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/decowood.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/purtse.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/dodo pizza.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/xella.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/hydro.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/tradehouse.png",
-        "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/rsteel.png"
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/ejewels.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/pirita-hambaravi.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/windro.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/skinest.jpg",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/decowood.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/purtse.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/dodo pizza.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/xella.png",
+    "../media/logod/RAHASTUS JA MUU NÕUSTAMINE/rsteel.png"
     
 ]
 
@@ -296,7 +305,7 @@ buttons.forEach(function (button) {
     }
     
     buttons.forEach(function(button){
-        let message = `Leht ${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
+        let message = `${startIndex / 6 + 1} / ${Math.ceil(logos.length / 6)}`;
         button.textContent = message;
     });
     displayLogos();
