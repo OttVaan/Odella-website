@@ -202,7 +202,7 @@ function toContact(){
 const logos_buy_sell = [
     "../media/logod/ostu-müügi nõustamine/carglass.png",
     "../media/logod/ostu-müügi nõustamine/antalis.svg",
-    "../media/logod/ostu-müügi nõustamine/sanitexxx.png", // Vigane logo WE ARE SWEEP
+    "../media/logod/ostu-müügi nõustamine/sweep.png", // Vigane logo WE ARE SWEEP
     "../media/logod/ostu-müügi nõustamine/sanitex.png",
     "../media/logod/ostu-müügi nõustamine/mehiläinen.png",
     "../media/logod/ostu-müügi nõustamine/BAltCap.png",
@@ -230,6 +230,7 @@ const logos_due = [
     "../media/logod/DUE DILIGENCE/kidzone.png",
     "../media/logod/DUE DILIGENCE/vkge.svg",
     "../media/logod/DUE DILIGENCE/barrus.svg",
+    "../media/logod/DUE DILIGENCE/toom-tekstiil.png",
     "../media/logod/DUE DILIGENCE/ttl.png",
     "../media/logod/DUE DILIGENCE/3group.png",
     "../media/logod/DUE DILIGENCE/lindstöm.png", 
