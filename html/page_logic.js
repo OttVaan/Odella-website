@@ -212,7 +212,7 @@ const logos_buy_sell = [
 ];
 
 const logos_evaluation = [
-    "../media/logod/Ettevõtte-hindamine/carglass.png",
+    "../media/logod/Ettevõtte-hindamine/Wendre.png",
     "../media/logod/Ettevõtte-hindamine/meliva.svg",
     "../media/logod/Ettevõtte-hindamine/cybers.svg",
     "../media/logod/Ettevõtte-hindamine/kaupmees.png",
@@ -220,25 +220,25 @@ const logos_evaluation = [
     "../media/logod/Ettevõtte-hindamine/BaltCap.png",
     "../media/logod/Ettevõtte-hindamine/Koduekstra.png",
     "../media/logod/Ettevõtte-hindamine/Fcrmedia.jpg",
-    "../media/logod/Ettevõtte-hindamine/Wendre.png"
+    "../media/logod/Ettevõtte-hindamine/carglass.png"
 ];
 
 const logos_due = [
-    "../media/logod/DUE DILIGENCE/auto24.svg",
-    "../media/logod/DUE DILIGENCE/tradehouse.png",
-    "../media/logod/DUE DILIGENCE/straumann.png",
-    "../media/logod/DUE DILIGENCE/kidzone.png",
+    "../media/logod/DUE DILIGENCE/baltcap.png",
+    "../media/logod/DUE DILIGENCE/3group.png",
+    "../media/logod/DUE DILIGENCE/äripäev.png",
+    "../media/logod/DUE DILIGENCE/mehiläinen.png",
     "../media/logod/DUE DILIGENCE/vkge.svg",
+    "../media/logod/DUE DILIGENCE/tradehouse.png",
+    "../media/logod/DUE DILIGENCE/auto24.svg",
+    "../media/logod/DUE DILIGENCE/pirita-hambaravi.png",
+    "../media/logod/DUE DILIGENCE/kidzone.png",
     "../media/logod/DUE DILIGENCE/barrus.svg",
     "../media/logod/DUE DILIGENCE/toom-tekstiil.png",
     "../media/logod/DUE DILIGENCE/ttl.png",
-    "../media/logod/DUE DILIGENCE/3group.png",
     "../media/logod/DUE DILIGENCE/lindstöm.png", 
-    "../media/logod/DUE DILIGENCE/äripäev.png",
     "../media/logod/DUE DILIGENCE/tkm grupp.png",
-    "../media/logod/DUE DILIGENCE/baltcap.png",
     "../media/logod/DUE DILIGENCE/ridango.png",
-    "../media/logod/DUE DILIGENCE/mehiläinen.png",
     "../media/logod/DUE DILIGENCE/rahvaraamat.png",
     "../media/logod/DUE DILIGENCE/invalda.png",
     "../media/logod/DUE DILIGENCE/farmin.png",
