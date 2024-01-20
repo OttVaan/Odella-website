@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opinio Finance</title>
+
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/top_menu.css">
+        <link rel="stylesheet" href="css/contact.css">
+
+        <link href="//db.onlinewebfonts.com/c/5403db4e1a69d1dc66c1390eaca099d8?family=Seravek+Basic" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <div class="top-menu"> 
+                <div class="top-menu-side"></div>
+    
+                <div class="top-menu-middle">
+                    <div class="top-menu-item" onclick="toSection(0)">
+                        OSTU-MÜÜGI NÕUSTAMINE
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                    <div class="top-menu-item" onclick="toSection(1)">
+                        VÄÄRTUSE HINDAMINE
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                    <div class="top-menu-item" onclick="toSection(2)">
+                        DUE DILIGENCE
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                    <div class="top-menu-item" onclick="toSection(3)">
+                        RAHASTUSE KAASAMINE
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                    <div class="top-menu-item" onclick="toSection(4)">
+                        PEAMISED PARTNERID
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                    <div class="top-menu-item" onclick="toContact()">
+                        KONTAKT
+                        <div class="top-menu-item-hover-animation"></div>
+                    </div>
+                </div>
+                <div class="top-menu-side"></div>
+            </div>
+        </div>
+
+        <div class="top-logo">
+            <img class="logo" src="media/logo2.svg" alt="">
+        </div>
+
+        <div class="about-us">
+            <p class="heading">Ettevõtete äri- ja finantsalane nõustamine</p>
+        </div>
+
+        <div class="gallery-wrap">
+            <div class="back-panel"></div>
+            <img src="media/Buttons/icons8-circled-down-left-arrow-50.png" id="back-button" class="gallery-button">
+            <div class="gallery">
+
+                <!--ETTEVÕTETE OSTU-MÜÜGI NÕUSTAMINE--> 
+                <div class="section">
+                    <div class="section-info">
+                        <p class="section-heading">OSTU-MÜÜGI NÕUSTAMINE</p>
+                        <ul class="service-list">
+                            <li>M&A STRATEEGIA NÕUSTAMINE</li>
+                            <li>MÜÜGINÕUSTAMINE</li>
+                            <li>OSTUNÕUSTAMINE</li>
+                            <li>TEHINGU HINNA NÕUSTAMINE</li>
+                            <li>OSTU-MÜÜGI LEPINGU (SPA) FINANTSNÕUSTAMINE</li>
+                        </ul>
+                    </div>
+                    <div class="logos-right-panel">
+                        <div class="section-logos" id="buy-sell"></div>
+                        <button class="next-logos-button" id="buy-sell-btn">Näita veel</button>
+                    </div>
+                    
+                </div>
+
+                <!--ETTEVÕTETE HINDAMINE--> 
+                <div class="section">
+                    <div class="section-info">
+                        <p class="section-heading"> ETTEVÕTETE HINDAMINE</p>
+                        <ul class="service-list">
+                            <li>ETTEVÕTTE VÄÄRTUSE HINDAMINE</li>
+                            <li>FINANTSPROGNOOSIDE KOOSTAMINE</li>
+                            <li>FINANTSMODELLEERIMINE</li>
+                            <li>OPTSIOONIDE HINDAMINE</li>
+                            <li>KAETAVA VÄÄRTUSE TEST</li>
+                        </ul>
+                    </div>
+                    <div class="logos-right-panel">
+                        <div class="section-logos" id="evaluation"></div>
+                        <button class="next-logos-button">Näita veel</button>
+                    </div>
+                </div>
+
+                <!--DUE DILIGENCE--> 
+                <div class="section">
+                    <div class="section-info">
+                        <p class="section-heading"> DUE DILIGENCE</p>
+                        <ul class="service-list">
+                            <li>FINANCIAL DUE DILIGENCE (FDD)</li>
+                            <li>TAX DUE DILIGENCE (TDD) </li>
+                            <li>VENDOR DUE DILIGENCE (VDD) </li>
+                            <li>KÄIBEKAPITALI ANALÜÜS </li>
+                            <li>TEHINGUJÄRGNE AUDIT</li>
+                        </ul>
+                        </div>
+                    <div class="logos-right-panel">
+                        <div class="section-logos" id="due"></div>
+                        <button class="next-logos-button">Näita veel</button>
+                    </div>
+                </div>
+                
+
+                <!--RAHASTUS JA MUU NÕUSTAMINE--> 
+                <div class="section">
+                    <div class="section-info">
+                        <p class="section-heading"> RAHASTUS JA MUU NÕUSTAMINE</p>
+                        <ul class="service-list">
+                            <li>PANGA FINANTSEERINGU KAASAMINE</li>
+                            <li>INVESTORITE KAASAMISE NÕUSTAMINE</li>
+                            <li>INVESTEERIMISMATERJALIDE KOOSTAMINE</li>
+                            <li>FINANTSJUHTIMISE NÕUSTAMINE</li>
+                            <li>ETTEVÕTETE RESTRUKTUREERIMINE</li>
+                        </ul>
+                    </div>
+                    <div class="logos-right-panel">
+                        <div class="section-logos" id="money"></div>
+                        <button class="next-logos-button">Näita veel</button>
+                    </div>
+                </div>
+                
+
+                <!--PEAMISED KOOSTÖÖPARTNERID--> 
+                <div class="section">
+                    <div class="section-info">
+                        <p class="section-heading"> PEAMISED KOOSTÖÖPARTNERID</p>
+                    </div>
+                    <div class="logos-right-panel">
+                        <div class="section-logos" id="partner"></div>
+                        <button class="next-logos-button">Näita veel</button>
+                    </div>
+                </div>
+
+            </div>
+            <img src="media/Buttons/icons8-circled-down-left-arrow-50.png" id="next-button" class="gallery-button">
+        </div>
+
+        <div class="contact">
+            <div class="back-panel"></div>
+            <div class="front-panel"></div>
+            <div class="heading">
+                KONTAKTID
+            </div>
+
+            <div class="personal-contacts">
+                <div class="personal-contact">
+                    <div>Enrico Laks </div>
+                    <div>enrico@opinio.ee</div>
+                    <div>M: (+372) 56 51 557</div>
+                    <a href="https://www.linkedin.com/in/enrico-laks-56219113/" target="_blank">
+                        <img class="linkedin-img" id="linkedin-enrico" src="media/LinkedIn_logo_initials.png" alt="">
+                    </a>
+                    
+                     
+                    
+                </div>
+
+                <div class="company-contact">
+                    <div>Opinio Finance OÜ</div>
+                    <div>Skyon</div>
+                    <div>Maakri 30</div>
+                    <div>10145 Tallinn</div>
+
+                </div>
+
+                <div class="personal-contact">
+                    <div>Kreete Reimann </div>
+                    <div>kreete@opinio.ee </div>
+                    <div>M: (+372) 50 70 610</div>
+                    <a href="https://www.linkedin.com/in/kreete-reimann-08a0244a/" target="_blank">
+                        <img class="linkedin-img" src="media/LinkedIn_logo_initials.png">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+                <img src="media/logo3.svg" id="footer-logo">
+        </div>
+        
+    <script src="javascript/page_logic.js"> </script>
+    </body>
+</html>
